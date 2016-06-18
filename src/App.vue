@@ -86,6 +86,7 @@ pre {
 }
 
 .p1 { padding: .25em; }
+.p2 { padding: .5em; }
 .py1 { padding-top: .25em; padding-bottom: .25em; }
 .p3 { padding: 1em; }
 
