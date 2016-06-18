@@ -12,14 +12,17 @@
       <div>
         <button type="button"
           class="btn btn-primary fit block dim"
-          @click.stop="showModal = true">+</button>
-        <div v-show="showModal" class="mt2">
-          <input type="text"
-            class="fit input"
-            v-model="newSub"
-            placeholder="Subreddit"
-            @click.stop
-            @keyup.enter='addSub'>
+          @click.stop="toggleModal">+</button>
+        <div v-show="showModal">
+          <div class="mt2 pt1">
+            <input type="text"
+              class="fit input"
+              v-el:new-input
+              v-model="newSub"
+              placeholder="Subreddit"
+              @click.stop
+              @keyup.enter='addSub'>
+          </div>
         </div>
       </div>
     </div>
@@ -71,6 +74,17 @@ export default {
         this.showMenu = false
       } else {
         this.showMenu = true
+      }
+    },
+
+    toggleModal () {
+      if (this.showModal) {
+        this.showModal = false
+      } else {
+        this.showModal = true
+        setTimeout(() => {
+          this.$els.newInput.focus()
+        }, 50)
       }
     }
   }
@@ -136,6 +150,10 @@ export default {
     opacity: 0;
   }
 
+  70% {
+    opacity: 0;
+  }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -146,6 +164,10 @@ export default {
   0% {
     transform: translateY(0);
     opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
   }
 
   100% {

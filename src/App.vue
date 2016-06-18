@@ -86,10 +86,12 @@ pre {
 }
 
 .p1 { padding: .25em; }
+.pt1 { padding-top: .25em; }
 .p2 { padding: .5em; }
 .py1 { padding-top: .25em; padding-bottom: .25em; }
 .p3 { padding: 1em; }
 
+.my2 { margin-top: .5em; margin-bottom: .5em; }
 .mt2 { margin-top: .5em; }
 .mt3 { margin-top: 1em; }
 
@@ -111,8 +113,9 @@ pre {
   -webkit-appearance: none;
   background: #fff;
   background-image: none;
-  border: .1rem solid #c5c5c5;
-  border-radius: .3rem;
+  border: 0;
+  border-bottom: .1rem solid #c5c5c5;
+  border-radius: 0;
   display: block;
   font-size: 1rem;
   outline: 0;
