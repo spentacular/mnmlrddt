@@ -11,7 +11,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "postcommit": "npm run build && surge --project dist/ --domain quixotic-frog.surge.sh"
+    "postcommit": "npm run build && surge --project dist/ --domain mnmlrddt.surge.sh"
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
