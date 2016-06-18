@@ -90,10 +90,14 @@ pre {
 .p2 { padding: .5em; }
 .py1 { padding-top: .25em; padding-bottom: .25em; }
 .p3 { padding: 1em; }
+.pb3 { padding-bottom: 1em; }
 
+.my0 { margin-top: 0; margin-bottom: 0; }
+.mt1 { margin-top: .5em; }
 .my2 { margin-top: .5em; margin-bottom: .5em; }
 .mt2 { margin-top: .5em; }
 .mt3 { margin-top: 1em; }
+.my3 { margin-top: 1em; margin-bottom: 1em; }
 
 .flex { display: flex; }
 .items-center { align-items: center; }
@@ -152,6 +156,10 @@ pre {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.center {
+  text-align: center;
 }
 
 @media (min-width: 40em) {

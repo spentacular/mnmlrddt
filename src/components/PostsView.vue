@@ -28,7 +28,7 @@ export default {
       posts: [],
       sub: null,
       after: null,
-      busy: false
+      busy: true
     }
   },
 
