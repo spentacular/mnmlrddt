@@ -119,12 +119,12 @@ pre {
   background: #fff;
   background-image: none;
   border: 0;
-  border-bottom: .1rem solid #c5c5c5;
+  border-bottom: .1rem solid #dcdcdc;
   border-radius: 0;
   display: block;
   font-size: 1rem;
   outline: 0;
-  padding: .25rem .4rem;
+  padding: .5rem .2rem;
   position: relative;
 }
 
