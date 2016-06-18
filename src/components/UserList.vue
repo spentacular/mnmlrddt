@@ -1,11 +1,14 @@
 <template>
   <div class="user-list p3 mt3 sml-vh100" @click.stop="showModal = false">
-    <button type="button" class="btn btn-primary nav-button dim" @click.stop="toggleMenu">Menu</button>
+    <div class="flex justify-between items-end">
+      <img class="logo" src="../assets/logo.svg">
+      <button type="button" class="btn silver nav-button dim" @click.stop="toggleMenu">Menu</button>
+    </div>
     <div class="menu" transition="expand" v-show="showMenu">
       <ul class="list-reset">
         <li><a v-link="{ name: 'sub', params: { subreddit: 'all' }}" class="block p2 dim">all</a></li>
         <li v-link-active v-for='sub in subs | orderBy "sub"' class="v-link flex items-center justify-between">
-          <a v-link="{ name: 'sub', params: { subreddit: sub.sub }}" class="block p2 dim">{{sub.sub}}</a>
+          <a v-link="{ name: 'sub', params: { subreddit: sub.sub }}" class="block fit p2 dim">{{sub.sub}}</a>
           <button class="destroy dim gray" @click="removeSub(sub)"><span>✕</span></button>
         </li>
       </ul>

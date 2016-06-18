@@ -101,6 +101,7 @@ pre {
 
 .flex { display: flex; }
 .items-center { align-items: center; }
+.items-end { align-items: flex-end; }
 .justify-between { justify-content: space-between; }
 
 .destroy {
@@ -147,6 +148,12 @@ pre {
 .btn-primary {
   color: #fff;
   background-color: #844FD5;
+  border-radius: 3px;
+}
+
+.btn-silver {
+  color: #fff;
+  background-color: silver;
   border-radius: 3px;
 }
 
