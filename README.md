@@ -1,5 +1,7 @@
 # minimal_reddit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/spentacular/mnmlrddt.svg)](https://greenkeeper.io/)
+
 A simple reddit viewer with infinite scroll, and local storage to save commonly visited subs. Build using Vue.js
 
 ## Build Setup
